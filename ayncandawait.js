@@ -10,7 +10,7 @@ const myfun=async()=>{
     const result=await fun1("123");
     console.log(result);
     console.log("456")
-    console.log("TEsting");
+    console.log("Testing");
 };
 myfun();
 //asyncawait
