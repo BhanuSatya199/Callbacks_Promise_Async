@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/BhanuSatya199/Callbacks_Promise_Async/issues"
   },
-  "homepage": "https://github.com/BhanuSatya199/Callbacks_Promise_Async#readme"
+  "homepage": "https://github.com/BhanuSatya199/Callbacks_Promise_Async#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }

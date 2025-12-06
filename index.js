@@ -1,14 +1,8 @@
-import http from 'http';
-const server=http.createServer((req,res)=>{
-    console.log(req.method);
-    if(req.url==="/users"){
-        res.writeHead(200,{"Content-Type":"application/json"});
-        res.end(JSON.stringify({name:"thub"}))
-    }else{
-        res.writeHead(200,{"Content-Type":"text/plain"});
-        res.end("Hello this is from backend")
-    }
-});
-server.listen(7007,()=>{
-    console.log(`Server is running at port ${7007}`);
+import express from 'express';
+const app=express();
+app.get('/',(req,res)=>{
+    res.send("Hello All")
+})
+app.listen(5000,()=>{
+    console.log("Server is running at port 5000");
 })
